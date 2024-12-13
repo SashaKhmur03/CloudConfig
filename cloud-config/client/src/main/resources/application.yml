@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: test-app
+  config:
+    import: 'optional:configserver:'
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://config:config-pass@localhost:8888
